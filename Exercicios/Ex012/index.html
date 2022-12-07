@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hopedados localmente</h1>
+    <p>Usando a tag &lt;video&gt; funciona igual a tag &lt;audio&gt; em duas formas, sendo uma mais simples e outra mais completa, na mais completa ordenamos os video por tamanho onde primeiro vem o mais leve, para diminuir ao maximo o tráfego. Além dos atributos controls, autoplay e loop temos também width que indicamos o valor em pixels da largura do video e poster para indicarmos um arquivo de imagem que será a tumb do video. Os formatos compativeis mais comuns são mp4,m4v,webm e ogv.
+    </p>
+    <p>Este video está hospedado no meu próprio servidor.</p>
+    <video src="midia/flor_HD.mp4" width="560" controls autoplay loop></video>
+    <p>
+        <video controls width="560" poster="imagens/nevado.png">
+            <source src="midia/nevado_HD.m4v" type="video/mp4">
+            <source src="midia/nevado_HD.webm" type="video/webm">
+            <source src="midia/nevado_FHD.mp4" type="video/mp4">
+            <source src="midia/nevado_HD.ogv" type="video/ogv">
+            <p>Seu navegador não é compativel com reprodução de videos. <a href="midia/nevado_FHD.mp4">Clique aqui para download</a></p>
+        </video>
+    </p>
+    <h1>Inserido videos do Youtube</h1>
+    <p>Para inserir videos do youtube é só acessar qual video deseja inserir no site, ir em compartilhar e na opção incorporar ele gera o codigo e é só colar no HTML.</p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/9rZKhGrQ1wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    <h1>Inserindo videos do Vimeo</h1>
+    <p>Para inserir video do vimeo é semelhante ao do youtube, vamos em compartilhar e haverá o codigo, com a vantagem de ter mais opções para o codigo que o youtube</p>
+    <iframe src="https://player.vimeo.com/video/185871317?h=a63f42bf1b&loop=1&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

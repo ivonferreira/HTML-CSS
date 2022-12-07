@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(154, 153, 153);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 3px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 10px 0px rgb(59, 59, 59);
+        }
+        article {
+            background-color: lightgray;
+            padding: 8px;
+        }
+            article > aside {
+            background-color: rgb(155, 155, 155);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#assuntos">Assuntos</a>
+            <a href="#noticias">Noticias</a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href=""></a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Grouping Tags</h2>
+                <p>As principais grouping tags que usamos são:
+                    <ol>
+                        <li>nav- Para menus</li>
+                        <li>header- Para criar cabeçalhos</li>
+                        <li>main- Para o conteúdo principal</li>
+                        <li>footer- Para o rodapé</li>
+                        <li>article- Para artigos</li>
+                        <li>section- Para dividir os textos em secções</li>
+                        <li>aside- Para observações no texto.</li>
+                    </ol>
+                </p>
+                <p>Todas as grouping tags podem ser usadas dentro das outras, mas respeitando a ordem das principais sendo header, main e footer</p>
+                <h2>Adicionando Sombra</h2>
+                <p>Usamos o parametro box-shadow e os valores são uma shorthand do deslocamento horizontal, deslocamento vertical, (antes podemos indicar o embaçamento)espalhamento e cor. Ex box-shadow: 1px 1px 1px black; </p>
+                <h2>Adicionando arredondamento de bordas</h2>
+                <p>Para arredondar as bordas usamos o parametro border-radius. Funciona em shorthand na ordem top left, top right,botton left e bottom right, usando 2 parametros ele agrupa os eixos invertidos (top left e bottom right e o outro top right e bottom left). As valores podem ser em px, % , em etc.</p>
+                <aside>Artigo escrito por Fulano de Tal</aside>
+            </article>
+        </section>
+        <section id="">
+
+        </section>
+    </main>
+    <footer>
+        
+        <p>Desenvolvido por Ivon Ferreira</p>
+    </footer>
+    
+</body>
+</html>

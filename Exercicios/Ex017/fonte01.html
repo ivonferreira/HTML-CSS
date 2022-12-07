@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 1.2em;
+        }
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+            font-size: 2em;
+            font-style: italic;
+            text-decoration:line-through;
+        }
+        h2 {
+            font: italic normal 1.5em "Times New Roman", serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <h2>Familia da fonte</h2>
+    <p>Ao escolher a font-family devemos indicar outras fontes parecidas para o caso do dispositivo em que a página for acessada não tenha a fonte em questão ele procure outra opção. Ex Arial, Helvetica, Sans-serif(caso não tenha a arial, ele tenta a helvetica, caso não tenha ele usar uma fonte sem serifa qualquer). Podemos indicar somente o tipo da fonte. Ex. serif, sans-serif, monospace etc</p>
+    <h2>Tamanho da fonte</h2>
+    <p>Para o font-size temos medidas absolutas e relativas:
+    </p>
+    <ul>
+        <li>Absolutas:
+            <ul><li>Centimetro: cm</li>
+                <li>Milimetro: mm</li>
+                <li>Polegadas: in</li>
+                <li>Pixels: px (Mais recomendada pela W3C, o padrão dos browsers é 16px)</li>
+                <li>Ponto: pt</li>
+                <li>Pyca: pc</li></ul>
+        </li>
+        <li>Relativas:
+            <ul><li>Relativo ao M maiusculo: em (A medida mais recomendada pela W3C.1em equivale ao tamanho padrão, ou seja 16px)</li>
+                <li>Relativo ao x minusculo: ex</li>
+                <li>Relativo ao M da fonte do body: rem</li>
+                <li>Largura da viewport em %: vm</li>
+                <li>Espessura da viewport em %: vh</li></ul>
+        </li>
+    </ul>
+    <h2>Peso da fonte</h2>
+    <p>É relativo a espessura da fonte. utilizamos o parametro font-weight. O valores aceitos dependendo da fonte são:lighter(mais fino), normal(médio),bold(negrito), bolder(mais grosso). Outra forma é indicando uma escala (de 100 em 100) de 100 a 900. A maioria das fontes não tem essas escalas, mas as que tem podem ser usadas.</p>
+    <h2>Estilo da fonte</h2>
+    <p>É o estilo da fonte. Utilizamos o parametro font-style e os valores pode ser:normal ou italic(itálico)</p>
+    <h2>Decoração de texto</h2>
+    <p>Usamos para sublinhar. Parametro text-decoration e os valores podem ser:Underline, line-through e outros</p>
+    <h2>Shorthand</h2>
+    <p>Uma dica importante é que podemos usar as shorthands para configurações de fontes em uma só linha.Não é obrigatório todos os parametros, mas precisa ser nessa ordem:
+        <ol><li>font-style</li>
+            <li>font-weight</li>
+            <li>font-size</li>
+            <li>font-family</li></ol>
+    </p>
+    <p>Exemplo:</p>
+    <p><strong>font: italic bolder 3em Arial, sans-serif</strong></p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, esse nostrum. Cum quia vero, excepturi harum in esse dolore voluptates eveniet deleniti, facere magni, nobis cupiditate ullam debitis quam autem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sed, id fugit praesentium blanditiis placeat adipisci ex error exercitationem sit eum expedita similique in deleniti excepturi inventore provident maxime architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores hic expedita neque earum atque recusandae perspiciatis similique necessitatibus voluptatibus ipsam iste possimus culpa, enim sunt. Voluptatibus accusamus consectetur modi magnam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati vero quod similique aliquid! Pariatur quod cum explicabo voluptatem, numquam nemo dicta odit quam! Culpa voluptatum voluptas incidunt quae velit?</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet modi ab ratione unde distinctio atque corrupti voluptas eum fugiat, deserunt magni doloremque, animi voluptatem quaerat placeat quod. Doloremque, esse.</p>
+</body>
+</html>

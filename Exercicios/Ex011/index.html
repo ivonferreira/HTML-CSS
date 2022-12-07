@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <p>Para uma imagem dinamica usamos a tag &lt;picture&gt;e dentro dela colocamos a &lt;img&gt; com a imagem em tamanho grande, acima adicionamos a tag &lt;source&gt; alteramos para de mid-width para max-width e colocamos o tamanho da maior imagem mais 50px, no parametro scrset indicamos o arquivo de tamanho medio e no type será image/o tipo do arquivo.
+    </p>
+    <p>Para adicionar uma imagem de tamanho menor, colocamos acima da anterio obrigatoriamente, a mesma tag source, indicando o arquivo menor, e o max-width será o tamanho da imagem media + 50px, não esquecendo de preencher o type como o anterior. Podemos adicionar vários tamanhos de imagem, respeitando a ordem e o tamanho da janela ou tela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <p>Para usar audio em HTML5 usamos a tag &lt;audio&gt; de duas formas:</p>
+    <ul>
+        <li>A tag &lt;audio&gt; com um parametro src indicando o arquivo mp3, ogg ou wav</li>
+        <li>A tag &lt;audio&gt; sem o src e dentro da tag colocamos a tag &lt;source&gt; com o paramentro src indicando o arquivo do audio e o type audio/mpeg(para mp3)ogg ou wav. Dessa forma podemos adicionar varias sources com formatos diferentes, e ele assim como nas imagens ele precisa de uma ordem,(o de cima primeiro) caso o primeiro não funcione , o segundo caso não, o terceiro e assim por diante. No ultimo colocamos o arquivo para download atraves de um link e uma mensagem de que o navegador não reproduz o audio </li>
+    </ul>
+    <p>Os seguintes parametros podem ser adicionados nos dois tipos de tag &lt;audio&gt;</p>
+    <ul>
+        <li>autoplay- Nem sempre funciona, mas serve para reproduzir o audio ao carregar o site</li>
+        <li>preload- Se o audio deve ser carregado antes do site aparecer</li>
+        <ul>
+            <li>auto - Carrega junto com o site, é o mais perigoso pois o site só vai aparecer quando o audio estiver totalmente baixado</li>
+            <li>metadata -Carrega junto com o site apenas as informações basicas do audio, como duração, nome, velocidade</li>
+            <li>none - Carrega só após o carregamento do site</li>
+        </ul>
+        <li>controls - Exibe um controlador de audio básico</li>
+        <li>loop - Assim que o som terminar de ser tocado ele começa novamente, usado para musicas de fundo e outros</li>
+    </ul>
+    <audio src="midia/thorshammer.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/wanted.mp3" type="audio/mpeg">
+        <source src="midia/wanted.ogg" type="audio/ogg">
+        <source src="midia/wanted.wav" type="audio/wav">
+        <p>Infelizmento seu navegador não consegue reproduzir audio.
+            <a href="midia/wanted.mp3">Clique aqui para baixar</a>
+        </p>
+    </audio>
+
+</body>
+</html>

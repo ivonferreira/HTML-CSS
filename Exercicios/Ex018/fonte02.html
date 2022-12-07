@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Siempre Gotica';
+            src: url('fonts/Por Siempre Gotica.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'LoveCraft';
+            src: url(fonts/lovecraft.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Siempre Gotica', Times, serif;
+            font-size: 3em;
+        }
+        h2 {
+            font-family: 'LoveCraft', Arial, sans-serif;
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <h2>Importando Fontes baixadas</h2>
+    <p>Usamos o seletor @font-face no inicio da area style. na src indicamos onde ficará o arquivo da fonte(ela precisa ser um dos arquivos necessários para o seu site) após isso indicamos o format, que podem ter esses valores: opentype (otf), truetype(ttf), embedded-type, true-type-aat(Apple Advanced typograph) ou svg.Para acrescentar mais de um tipo é só após o format usarmos uma virgula e indicar a outra url e format.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente a quasi, officia consequatur quos autem, vero doloribus quis repellendus veniam. Quidem velit pariatur quis ea sunt quisquam ullam accusamus.</p>
+</body>
+</html>

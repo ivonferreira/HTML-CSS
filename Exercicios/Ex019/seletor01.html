@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Sites com HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Identificando elementos HTML para estilos</h1>
+    <p>Para criar uma formatação especifica para alguns determinados elementos da pagina usamos o parametro id e nomeamos esse id. No arquivo de estilo indicamos o elemento com uma tralha(#) e o nome do id então dentro declaramos caracteristicas que só funcionariam nesse id.Também podemos declarar só a tralha e o id(mas ai qualquer elemento que tenham esse mesmo id será aplicado). Ex id#princiapal {background-color: blue;} ou #principal {text-align:center};</p>
+    <p>O limitador do id é que somente um elemento pode usar o identificador</p>
+    <p>Se em HTML é id na CSS usamos #, se usamos em HTML class na CSS usamos. Apesar de funcionar, é considerada uma forma errada de usar o id pelo W3C. Para suprir essa necessidade usamos o atributo class e no CSS declaramos os estilos como o id só que ao invés do # usamos o ponto(.). Obs: não nomear class e id pela caracteristica(nome da cor, tamanho, font) nomeie pela função(Principal, segundo, destacado etc.), pois se caso for preciso mudar a caracteristica o nome perde o sentido.</p>
+    <p>Podemos adicionar a qualquer parte do texto uma tag chamada span e nela indicar a class que criamos anteriormente, então nesse parte podemos usar sua formatação.</p>
+    <p>Podemos adicionar mais de uma class para um elemento basta entre as aspas colocar o nome das duas classes com um espaço entre elas. Podemos usar class e id no mesmo elemento também. nesse caso o id tem a prioridade.</p>
+    <h1 id="principais" class="destaque">Criando Sites com HTML e CSS</h1>
+    <h1>Aprendento HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptate nisi, consequuntur id distinctio rerum corporis, illum architecto, <span class="destaque">dolor</span>e minus nam nobis? Ad perferendis non assumenda sed in necessitatibus voluptas?</p>
+    <h2 class="medio">HTML Intermediário</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum aliquid, earum perspiciatis, ipsa accusantium praesentium impedit illum corrupti id, consequuntur numquam? Debitis possimus, id cumque sequi voluptatum ut quae vero?</p>
+    <h2 class="avanca">HTML Avançado</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta esse maxime iusto eaque optio sunt eius repudiandae laborum quam rerum omnis animi quod ea, enim cumque impedit voluptatum cum harum.</p>
+    <h1>Aprendendo</h1>
+    <h2 class="basico">CSS Básico</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint est, nemo sed illo atque sunt totam rem veniam quae repudiandae alias iusto eos minima reprehenderit quos laboriosam dignissimos cumque molestias?</p>
+    <h2 class="medio">CSS Intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsa eos recusandae quisquam praesentium? Reprehenderit culpa cumque deserunt, labore rerum, facere officia voluptatum velit sapiente animi molestias beatae atque porro.</p>
+    <h2 class="avanca destaque">CSS Avançado</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae debitis rerum esse saepe quaerat qui modi error nostrum, numquam sint. Ex eligendi, eaque nam impedit odit quibusdam quis dolores sequi?</p>
+</body>
+</html>

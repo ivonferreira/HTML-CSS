@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        
+        div:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <h1>Pseudo-classes</h1>
+    <p>São caracterista que são aplicadas em uma determinada condição. Usamos o nome do elemento dois pontos(:) e a condição que queremos que essa formatação aconteça, e dentro declaramos como será quando essa ação acontecer. Ex div:hover{background-color: red;}, nesse caso hover é quando passamos o mouse emcima do objeto.</p>
+    <p>Quando queremos declarar uma tag que esteja dentro de outra usamos o maior que (>) da tag pai para a tag filha. Ex. div > p {color:red;}</p>
+    <p>Algumas pseudo-classes<ul>
+        <li>hover - Quando passar o mouse</li>
+        <li>active - Quando o link é clicado</li>
+        <li>visited - Quando o link já foi aberto</li>
+    </ul></p>
+</body>
+</html>

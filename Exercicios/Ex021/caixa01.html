@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>h1{
+        background-color: lightgreen;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkslategray;
+        
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        margin-top: 20px;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: auto;
+
+        outline-width: 10px;
+        outline-style: dashed;
+        outline-color:yellow;
+        }
+        a {
+        border: 10px ridge darkred;
+       
+        padding: 10px;
+
+        margin: 20px;
+
+        outline: 10px dotted green;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>h1 é um exemplo de caixa box-level</h1>
+    <p>As caixas podem ser de 2 tipos:
+        <ul><li>box-level: Criam um salto na linha do conteúdo e tem o tamanho é todo o viewport(espaço branco do browser). O exemplo mais usado aqui é o &lt;div&gt;</li>. Outros exemplos:h1...h6, p, main, header, nav, article, aside, footer, form e video.
+        <li>inline-level: A box é criada na mesma linha do conteúdo e tem o tamanho apenas que será necessario. O exemplo mais usado é o &lt;span&gt;. Outros exemplos> Outros exemplos: a, code, small, em, sub, sup, label, button, input, select.</li></ul>
+    </p>
+    <p>Paragrafo também são exemplos de box-level, mas os <a href="http://www.google.com.br">links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+    <p>Obs: As caixas box-level tem a propriedade display com o valor 'block', já as inline-level tem o display com valor 'inline'. Dessa forma você pode transformar um box-level em inline-level e o contrario também.Ainda podemos usar o valor 'inline-block', que será inline com caracteristicas de block como o tamanho definido. </p>
+    <p>Com o google chrome podemos usar uma ferramenta chamada devtools que ajuda na criação de sites. Vamos no html aberto no browser clicamos com o botão direito e clicamos em imspecionar. Em cima selecionamos ELEMENTS e marcamos qual dos elementos queremos ver as propriedades, </p>
+    <p>Parametros que podermos usar para criar bordas: clicamos na aba styles e teremos duas areas uma é o estilo e a outra é o user agent. Na parte de estilos podemos modificar sem alterar o arquivo e visualmente temos a resposta visual dessas alterações. Caso fique do nosso agrado aplicamos no codigo. </p>
+    <p><ul>
+        <li>border-width: Largura da borda definimos com numero em pixels.</li>
+        <li>border-style: Estilo de borda, poder ser solid(solida), dotted(pontos), dashed(pontilhada), groove(tridimencional) entre outras.</li>
+        <li>border-color: Cor da borda, ai indicamos a cor.</li>
+    </ul> Podemos usar um shorthand seguindo essa ordem. Ex. border: 20px solid red.</p>
+    <p>Padding é a distancia do conteúdo para a borda. Precisamos declarar o padding top, right,bottom e left (recomenda-se que seja nessa ordem) em pixels. O shorthand é usado nessa mesma ordem. Ex. padding: 10px 10px 10px 10px 10px, se todas forem iguais podemos simplemente colocar : padding: 10px, e ainda se declarmos apenas 2 valores ele considera que top e bottom como o primeiro valor e left e right como o segundo. Ex. border: 10px 20px;</p>
+    <p>Margem é a distancia da bolda para fora, para os outros elementos adjacentes. Indicamos em pixels como o padding, e no mesmo sentido. Para criar uma box sempre centralizada, usamos o valor 'auto', assim independente do tamanho da tela ele sempre fica no centro. O shorthand é igual ao padding e mesma ordem. Ex margin 10px ou margin 10px 10px 10px 10px. Como o padding podemos indicar 1 valor ou 2 valores, ou até mesmo substituir qualquer dos valores por 'auto'.</p>
+    <p>Outline é um tracejado que fica na area da margem. Todas as opções que usamos com o border podemos usar com o outline.O limite do outline é sempre a margem.O shorthand do outline é igual ao da bordar. Ex outline: 10px dotted blue.</p>
+</body>
+</html>

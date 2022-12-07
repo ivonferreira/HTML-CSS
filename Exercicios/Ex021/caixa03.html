@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 19px solid black;
+            padding: 10px;
+            border-image: url('borda.png') 20 repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    <p>Para usar uma imagem como borda, a imagem precisa estar em png com fundo transparente. Usamos o parametro border-image-source(nome ou url do arquivo), border-image-slice(corte da imagem, digitamos valores sem grandeza e vamos verificando como fica) e border-image-repeat(repetição do corte o valor será repeat).Podemos usar o shorthand nessa ordem. Ex border-image: url('borda.png') 20 repeat;.</p>
+</body>
+</html>
