@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%)
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    <h1>Alinhamento vertical</h1>
+    <p>Para alinhar uma box dentro de outra verticalmente, temos que primeiramente garantir que a box externa tenha o posicionamento relativo (position:relative) que na maioria das vezes já padrão de uma box.</p>
+    <p>A box interna tem que ter o posicionamento absoluto (position: absolute)</p>
+    <p>Apartir disso podemos definir uma posição fixa da box interna em px ou em porcentagem. Contudo o alinhamento será pelo left top, não ficando bem centralizado e nesse caso usamos a declaração transform e o valor translate e nele indicamos valores negativos de 50% para os posicionamentos. Dessa forma a box fica bem centralizada como demonstra a imagem acima</p>
+</body>
+</html>
