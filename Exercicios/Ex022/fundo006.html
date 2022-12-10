@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 97.5vh;
+     
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main {
+            background-color: white;
+            width:400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>
+            Podemos definir o tamanho da imagem de fundo atraves da declaração background-size e oas valores serão a largura e a altura. Caso definimos um valor só ele sera a largura, caso definimos 2 ele será primeiro largura depois altura. Podemos definir esse tamanho em px ou em porcentagem (em porcentagem ele ajusta ao tamanho da janela). Outra coisa importante é que podemos definir o tamanho do body de acordo com o tamanho da view port onde usamos o height em porcentagem de vh (viewheight, ou vw viewwidth).
+            Outras opções de background-size são o contain ( onde ele mostra a imagem completa sempre independente do tamanho da janela) e cover (Onde ele sempre mostra a imagem sem mostrar o fundo, mesmo que tenha que picotar uma parte da imagem, geralmente funciona melhor com o alinhamento center center).</p>
+    </main>
+</body>
+</html>
