@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width:400px;
+            height:400px;
+            border-collapse: collapse;
+        }
+        tr {
+            background-color: gray;
+        }
+        tr.linha {
+            background-color: darkgray;
+        }
+        td {
+            border: 1px solid black;
+            padding:8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela em HTML</h1>
+    <p>Hierarquia de tabelas (simples)
+        Table = tabela <br>
+            Table header = Cabeçalho de tabela <br>
+            Table data (td)= Dados de tabela
+            Table row (tr)= Linha
+        Para construir tabelas usamos a tag Table e dentro dela usamos a tag tr para construir as linhas e dentro td para os dados que serão as colunas. Podemos definir estilo para cada linha, coluna ou celula através da declaraçao da table, tr ou td usando as classes e ids.
+        A tabela criada não terá linhas separatorias, então definimos como bordas(border) para as celulas. De forma padrão as celulas terão uma separação entre elas. Para que não se separem usamos o parametro border-collapse e valor collapse. O fechamento da tag td é opcional, mas é recomendado.
+        Se a hieraquia não for respeitada os dados apareceram antes ou após as tabela.
+        </p>
+        <h2>Alinhando o conteudo</h2>
+        <p>Para o alinhamento dos dados na tabela nos configuramos o td. Para alinhamento horizontal usamos o text-align como no texto em geral. Para o alinhamento vertical usamos o parametro vertical-align onde podemos alinhar por top, bottom e middle(padrão).</p>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
