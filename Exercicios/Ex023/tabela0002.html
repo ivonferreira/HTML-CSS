@@ -12,6 +12,7 @@
         table {
             width: 350px;
             border-collapse: collapse;
+            position:relative;
         }
         td, th {
             border: 1px solid black;
@@ -28,8 +29,21 @@
             background-color: rgb(34, 33, 33);
             color:white;
         }
-        tfoot {
+        thead > tr > th {
+            position:sticky;
+            top:-1px;
+            background-color: rgba(34, 33, 33);
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: darkgray;
+            text-decoration: underline;
+        }
+        tbody > tr:nth-child(even) {
             background-color: gray;
+            font-weight: bold;
+        }
+        tfoot {
+            background-color: rgb(49, 49, 49);
             color:black;
         }
         .num {
@@ -50,8 +64,21 @@
     <p>Devemos saber bem o que é o th e o td, o que for um titulo é th o que for um dado deve usar td. Para indicar qual o escopo de um titulo indicamos onde ele indica onde o dado que ele refere está (row ou col). 
     </p>
     <p>Podemos definir o tamanho de uma coluna indicando atraves do estilo inline.Ex style="width= 50px;".</p>
+    <h2>Tabelas zebradas</h2>
+    <p>Para fazer o efeito zebrado, usamos na tr do body uma pseudoclasse nth-child() onde dentro dos parenteses definimos como será o intervalo. As opções são odd ou 2n-1(impares) , even ou 2n (pares), 3n (de 3 em 3), 4n (de 4 em 4)e assim por diante. E nele definimos o background color.Podemos inclusive fazer duas configurações de cores diferentes, uma par e outra impar. </p>
+    <h2>Titulo Fixo</h2>
+    <p>Para que o titulo da tabela fique fixo ao rolar usamos fazemos algumas configurações:
+        <ol>
+            <li>Na tabela definimos a position para relative;</li>
+            <li>Fazemos a declaração table >tr >th;</li>
+            <li>Definimos a position para striky</li>
+            <li>Definimos o top para 0, ou (-1px, caso não fique totalmente encostado)</li>
+            <li>Definimos o background color igual ao do fundo do titulo</li>
+        </ol>
+    </p>
+    <p>Essa configurações de titulo fixo não funciona bem em todos os navegadores. Ao final da rolagem da tabela o titulo fica. Não atrapalhando o texto da página.</p>
     <table>
-        <caption>População por unidade federativa</caption>
+        <caption>População por Unidade Federativa</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
@@ -175,5 +202,26 @@
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cupiditate magni autem dolorem inventore minus distinctio alias itaque aliquam dolor quo earum placeat accusamus commodi exercitationem aliquid, pariatur delectus optio.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas voluptatibus ex, quos itaque, incidunt voluptatem placeat iusto, eligendi quibusdam nam! Libero facilis voluptate architecto! Aperiam quas architecto molestiae doloremque!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab amet placeat voluptatum quia et eius consequatur qui a explicabo quasi, exercitationem magnam deleniti corrupti ipsam dolores veniam nihil consequuntur nam.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti asperiores tenetur, sint minus, quibusdam nihil excepturi voluptatum enim exercitationem soluta placeat. Consequatur quod rem debitis corporis. Temporibus architecto voluptates voluptatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet, ipsa harum est fugiat quisquam, vitae, provident at hic illum officia unde! Eaque quod, at amet perferendis nesciunt alias magnam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita blanditiis beatae veritatis aliquam sequi, tempore totam laborum omnis porro animi quaerat reprehenderit nemo repellat ducimus consequuntur aut, ipsa alias magnam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui provident aperiam corporis nam nemo eius quo tenetur ipsam accusamus tempore fugit cum, exercitationem iste ratione vero sequi fugiat, laborum odit!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis officiis atque ipsum eligendi aliquam ut est odio, vero ab aspernatur incidunt. Sequi, fugit repellat? Soluta distinctio incidunt ab illum placeat.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sapiente eaque, vero pariatur commodi labore, eveniet error quam quod corporis aliquam, debitis minus fugiat a. Fugit quis incidunt dolor cumque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam vero sunt numquam corrupti molestias commodi! Nihil deserunt reprehenderit iste maiores alias ullam molestiae sequi consequuntur. Illum consectetur nobis eaque?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium illum, aperiam maxime totam vero officiis tenetur odit non alias distinctio, voluptatibus vel ducimus eius. Fugiat hic voluptates sit beatae excepturi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quasi maiores vel laudantium dolore provident corporis harum exercitationem repudiandae itaque molestiae, eveniet, nostrum magnam quo sapiente ratione dolorum fugiat eum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magni nobis nulla reprehenderit sed tenetur ad maxime ipsam cupiditate laborum nemo quae, delectus molestias! Beatae nostrum dolorum expedita modi cum?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ullam doloremque repellat quos qui beatae accusantium culpa quidem illo dolor impedit iure, eligendi molestiae vero harum. Sunt maiores pariatur numquam.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, nostrum! Dicta ab repudiandae sequi deserunt asperiores nam in! Dolor reprehenderit minus ipsam qui vero earum sequi dolore sit explicabo ex.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nostrum accusantium nobis quis quaerat unde aliquid! Earum ipsam obcaecati debitis odio nesciunt, deserunt voluptate non tempora totam assumenda. Architecto, perspiciatis!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas magni magnam dolore id nihil porro tempora. Possimus quae quam, incidunt sunt ipsum fuga, facilis, minus culpa commodi reprehenderit facere adipisci!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat animi a aliquam ipsa explicabo odit necessitatibus expedita quas iste adipisci voluptatem sit rerum et, numquam ad eaque perspiciatis nobis repudiandae.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, reprehenderit rem asperiores modi quos rerum libero impedit sed magnam suscipit odio minus, a blanditiis, ipsa dicta repellat nulla voluptatum eum.
+    </p>
 </body>
 </html>

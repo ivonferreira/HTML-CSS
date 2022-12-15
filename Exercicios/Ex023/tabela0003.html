@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas - Mescagem de celulas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+        
+        </tr>
+        <tr>
+            
+            <td colspan="2">L</td>
+        </tr>
+    </table>
+    <p>Para mesclar celulas usamos o parametro colspan(expansão de coluna) e rowspan(expansão de linha) e a quantidade de celulas que serão ocupadas. Para que a expansão seja na vertical usamos a rowspan pois a celula vai ocupar mais de uma linha, para expansão horizontal usamos a colspan pois a celula ocupará varias colunas.</p>
+</body>
+</html>
