@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width:95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Para as páginas abrirem no iframe, definimos um nome para ele na tag iframe e no link indicamos o target o nome do iframe que definimos. </p>
+    <p>O srcdoc é um parametro em que podemos colocar um codigo html criando uma página caso não tenha nenhum link selecionado, ele substituio scr no iframe</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, itaque expedita! Magnam veritatis doloribus neque praesentium in sed quod, odit libero qui, ut veniam dolorum esse cumque aliquid perferendis explicabo.</p>
+    <ul>
+        <li>
+            <a href="paginas-extras/pagina1.html" target="frame">Primeira página</a>
+        </li>
+        <li>
+            <a href="paginas-extras/pagina2.html" target="frame">Segunda página</a>
+        </li>
+        <li>
+            <a href="paginas-extras/pagina3.html" target="frame">Terceira página</a>
+        </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur, exercitationem sit at magnam hic expedita voluptatibus aliquid molestiae neque officiis nesciunt, nobis inventore architecto delectus amet ipsum error similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad ullam beatae id! Debitis id modi quasi, minus pariatur ea nulla provident, blanditiis fugiat corporis magnam explicabo aliquid cumque maiores?</p>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab ipsum alias quia ad, ratione odio totam commodi dicta ducimus iste corrupti dolor, tempora, architecto tenetur quaerat dolorum saepe doloremque.</p><img src='imagens/astronauta.png'> " id="tela" name="frame">
+        <p>Infelizamente seu navegador não é compativel com iframe</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus quis odit praesentium quas rem minima debitis quibusdam id qui ipsa unde earum, officia delectus? Porro ducimus illum eveniet possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, deleniti, dicta aliquam nesciunt laboriosam similique provident et atque iste architecto inventore commodi distinctio optio! Non incidunt amet sed rerum vitae.</p>
+</body>
+</html>
