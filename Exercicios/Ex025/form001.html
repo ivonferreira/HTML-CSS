@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="get">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="ENVIAR" onclick="submeter()"></p>
+    </form>
+    <p>Para criar um formulário, usamos a tag form e nela indicamos os campos que serão usados, ao lado dos campos usamos um input de texto com nome e id. Mas a principio o titulo do formulário e o input não possuem nenhuma ligação para isso no texto que indica o que entrará naquele input usaremos a tag label e indicamemos no for o id do input. Todo input de texto terá nome e id. O nome é usado mais em Php e html e o id é no JavaScript.</p>
+    <p>Caso você não queira que o formulário tenha o autocompletar usamos no form uma preferencia chamada autocomplete com valor off.</p>
+    <p>No final precisamos de uma entrada para submeter as informações digitadas, para isso criamos um input do tipo submit que precisa de um value .</p>
+    <p>Existem de 2 metodos (method)de envio de formulário: GET é o padrão se não for especificado será esse o método, o seja se os dados não forem sensiveis ou para compartilhar os dados que foram usados, usamos esse metodo. POST dessa forma os dados não aparecem no endereço apesar dos dados enviados não aparecerem eles estão apenas escondidos mas são acessiveis.</p>
+    <p>Para enviar formulários no metodo get só podemos enviar no máximo 3000 bytes ou seja 3000 letras e com envio de outros arquivos de imagens e outros. Caso contrário usaremos o POST. </p>
+</body>
+</html>
