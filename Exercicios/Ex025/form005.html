@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo:</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+            <input type="radio" name="sexo" id="isxas" value="A"><label for="isxas">Assexuado</label>
+            <input type="radio" name="sexo" id="isxnb" value="N"><label for="isxnb">Não-binário</label>
+            <input type="radio" name="sexo" id="isxtra" value="T"><label for="isxtra">Transsexual</label>
+            <input type="radio" name="sexo" id="isxout"  value="O" checked><label for="isxout">Outros</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos:</legend>
+            <input type="checkbox" name="esbas" id="iesbas" checked><label for="iesbas">Basquete</label>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>
+            <input type="checkbox" name="esvol" id="iesvol" checked><label for="iesvol">Voleibol</label>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label>
+            <input type="checkbox" name="esbox" id="iesbox"><label for="iesbox">Boxe</label>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tenis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <p>Para o input checkbox usamos o label apos a tag, e indicamos o id da mesma forma. Para o input de opção unica usamos o radio, e nesse caso os name de todas as radios precisam ser igual e id diferente, pois só um valor será aceito. Para que uma opção já esteja marcado de forma padrão usamos o parametro checked, no caso do radio só um pode ficar marcado, caso mais de um esteja marcado ele só marcará o ultimo. Para que o radio ou checkbox envie um determinado valor usamos o value em cada opção</p>
+    </body>
+    </html>
+    

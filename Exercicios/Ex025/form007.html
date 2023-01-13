@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 7</title>
+</head>
+<body>
+    <h1>Formulários sem input</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <option value="" selected>#Selecione seu estado#</option>
+                <optgroup label="Região Suldeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espitito Santo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="CE">Ceará</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PI">Piaui</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="AC">Acre</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Região Centro-Oeste">
+                    <option value="MG">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="GO">Goias</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+                
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstpro">
+            <datalist id="lstpro">
+                <option>Administrador</option>
+                <option value="BIO">Biomédico</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="ADV">Advogado</option>
+                <option value="MED">Médico</option>
+                <option value="EMP">Empresário</option>
+                <option value="AUT">Autonomo</option>
+            </datalist>
+
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite uma mensagem..."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <p>
+        Uma forma de criar uma lista de opções num formulário usamos o select e dentro dessa tag usamos as opções sem tas option com o value e o nome. Podemos também agrupar um conjunto de options com a tag optgroup e usamos uma parametro chamado label para dar o nome do grupo. Para deixar uma opção padrão indicamos o parametro selected no option escolhido.Para deixar uma opção como um placeholder criamos uma opção com value vazio e colocamos ela como selected.
+    </p>
+    <p>
+        Podemos adicionar listas de opções em inputs que nos digitamos semelhantes ao autocomplete. Para isso após o input usamos a tag datalist e dentro inserimos as opções (com ou sem value) e no datalist indicamos uma id e no input acrescentamos um atributo list e no valor o id da datalist.
+    </p>
+    <p>
+        Podemos também deixar uma area para que seja digitado um texto livre, para isso usamos a tag textarea nela devemos indicar o nome , id, colunas e linhas. As linhas e colunas são o tamanho na pagina.Não há limite de texto que pode ser digitado, por isso devemos usar o metodo post.
+    </p>
+</body>
+</html>
